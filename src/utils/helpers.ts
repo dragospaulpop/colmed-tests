@@ -24,6 +24,7 @@ export const debounce = <T extends (...args: unknown[]) => unknown>(
   func: T,
   wait: number
 ): ((...args: Parameters<T>) => void) => {
+  // aici era NodeJs.Timeout
   let timeout: number;
   return function executedFunction(...args: Parameters<T>) {
     const later = () => {
