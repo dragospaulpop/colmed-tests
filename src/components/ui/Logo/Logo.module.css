@@ -1,0 +1,76 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  transition: all var(--transition-normal);
+}
+
+.logoSvg {
+  height: 100%;
+  width: auto;
+}
+
+/* Variants */
+.primary .crossVertical,
+.primary .crossHorizontal {
+  fill: var(--primary-blue);
+}
+
+.primary .logoText {
+  fill: var(--dark-gray);
+}
+
+.primary .accentLine {
+  stroke: var(--accent-orange);
+}
+
+.white .crossVertical,
+.white .crossHorizontal {
+  fill: var(--white);
+}
+
+.white .logoText {
+  fill: var(--white);
+}
+
+.white .accentLine {
+  stroke: var(--light-blue);
+}
+
+.monochrome .crossVertical,
+.monochrome .crossHorizontal {
+  fill: currentColor;
+}
+
+.monochrome .logoText {
+  fill: currentColor;
+}
+
+.monochrome .accentLine {
+  stroke: currentColor;
+  opacity: 0.6;
+}
+
+/* Sizes */
+.sm {
+  height: 32px;
+}
+
+.md {
+  height: 40px;
+}
+
+.lg {
+  height: 48px;
+}
+
+/* Hover effect */
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Focus styles for accessibility */
+.logo:focus {
+  outline: 2px solid var(--primary-blue);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}

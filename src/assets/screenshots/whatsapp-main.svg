@@ -1,0 +1,68 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect width="800" height="60" fill="#25D366"/>
+  <text x="20" y="35" fill="white" font-family="Inter, sans-serif" font-size="18" font-weight="600">Colmed - WhatsApp Integration</text>
+  
+  <!-- Chat Interface -->
+  <rect x="20" y="80" width="760" height="40" fill="#E7F3FF" rx="4"/>
+  <text x="30" y="105" fill="#1F2937" font-family="Inter, sans-serif" font-size="16" font-weight="500">Conversații Active - Asistent Virtual</text>
+  
+  <!-- Chat Messages -->
+  <g>
+    <!-- Patient Message -->
+    <rect x="50" y="140" width="300" height="60" fill="#E5E7EB" rx="8"/>
+    <text x="60" y="160" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Maria Popescu</text>
+    <text x="60" y="175" fill="#374151" font-family="Inter, sans-serif" font-size="11">Bună ziua, aș dori să fac o programare</text>
+    <text x="60" y="190" fill="#374151" font-family="Inter, sans-serif" font-size="11">pentru cardiologie.</text>
+  </g>
+  
+  <g>
+    <!-- Bot Response -->
+    <rect x="450" y="210" width="300" height="80" fill="#25D366" rx="8"/>
+    <text x="460" y="230" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="500">Colmed Assistant</text>
+    <text x="460" y="245" fill="white" font-family="Inter, sans-serif" font-size="11">Bună ziua! Vă pot ajuta cu programarea.</text>
+    <text x="460" y="260" fill="white" font-family="Inter, sans-serif" font-size="11">Am găsit următoarele opțiuni disponibile</text>
+    <text x="460" y="275" fill="white" font-family="Inter, sans-serif" font-size="11">pentru cardiologie:</text>
+  </g>
+  
+  <g>
+    <!-- Available Slots -->
+    <rect x="450" y="300" width="300" height="100" fill="#DCF8C6" rx="8"/>
+    <text x="460" y="320" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Opțiuni disponibile:</text>
+    <text x="460" y="340" fill="#374151" font-family="Inter, sans-serif" font-size="11">1. Dr. Ana Ionescu - 8 Ian, 14:30</text>
+    <text x="460" y="355" fill="#374151" font-family="Inter, sans-serif" font-size="11">2. Dr. Mihai Popescu - 9 Ian, 10:00</text>
+    <text x="460" y="370" fill="#374151" font-family="Inter, sans-serif" font-size="11">3. Dr. Elena Marinescu - 10 Ian, 16:00</text>
+    <text x="460" y="390" fill="#374151" font-family="Inter, sans-serif" font-size="11">Răspundeți cu numărul opțiunii dorite.</text>
+  </g>
+  
+  <!-- Statistics Panel -->
+  <rect x="20" y="420" width="760" height="160" fill="white" stroke="#E5E7EB" rx="8"/>
+  <text x="30" y="450" fill="#1F2937" font-family="Inter, sans-serif" font-size="18" font-weight="600">Statistici WhatsApp Integration</text>
+  
+  <g>
+    <rect x="30" y="470" width="180" height="80" fill="#F0F9FF" rx="4"/>
+    <text x="40" y="490" fill="#2563EB" font-family="Inter, sans-serif" font-size="24" font-weight="700">247</text>
+    <text x="40" y="510" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Programări automate</text>
+    <text x="40" y="525" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">această lună</text>
+  </g>
+  
+  <g>
+    <rect x="220" y="470" width="180" height="80" fill="#F0FDF4" rx="4"/>
+    <text x="230" y="490" fill="#10B981" font-family="Inter, sans-serif" font-size="24" font-weight="700">98%</text>
+    <text x="230" y="510" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Rata de răspuns</text>
+    <text x="230" y="525" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">în primele 30 secunde</text>
+  </g>
+  
+  <g>
+    <rect x="410" y="470" width="180" height="80" fill="#FFFBEB" rx="4"/>
+    <text x="420" y="490" fill="#F59E0B" font-family="Inter, sans-serif" font-size="24" font-weight="700">24/7</text>
+    <text x="420" y="510" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Disponibilitate</text>
+    <text x="420" y="525" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">asistent virtual</text>
+  </g>
+  
+  <!-- Colmed Branding -->
+  <text x="700" y="590" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Colmed 2025</text>
+</svg>

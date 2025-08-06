@@ -1,0 +1,517 @@
+/* Tech Section Styles */
+.techSection {
+  padding: 96px 0;
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.techSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, var(--primary-blue) 50%, transparent 100%);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out;
+}
+
+.header.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+}
+
+.titleUnderline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-blue), var(--accent-orange));
+  margin: 0 auto 32px auto;
+  border-radius: 2px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--medium-gray);
+  margin: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Tab Navigation */
+.tabNavigation {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out 0.2s;
+}
+
+.tabNavigation.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tabButton {
+  background: white;
+  border: 2px solid rgba(37, 99, 235, 0.1);
+  border-radius: 16px;
+  padding: 24px 32px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.tabButton:hover {
+  border-color: var(--primary-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.15);
+}
+
+.tabButton.active {
+  background: linear-gradient(135deg, var(--primary-blue), #1d4ed8);
+  border-color: var(--primary-blue);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.25);
+}
+
+.tabIcon {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.tabLabel {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.tabDescription {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+.tabButton.active .tabDescription {
+  opacity: 0.9;
+}
+
+/* Technology Grid */
+.techGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 24px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out 0.4s;
+}
+
+.techGrid.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.techCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: slideInCard 0.6s ease-out forwards;
+}
+
+.techCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
+}
+
+@keyframes slideInCard {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.techHeader {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+
+.techIcon {
+  font-size: 2.5rem;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--light-blue), rgba(37, 99, 235, 0.1));
+  border-radius: 12px;
+}
+
+.techInfo {
+  flex: 1;
+}
+
+.techName {
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin: 0 0 8px 0;
+  line-height: 1.3;
+}
+
+.techDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-gray);
+  margin: 0;
+}
+
+.techBenefits {
+  border-top: 1px solid rgba(37, 99, 235, 0.1);
+  padding-top: 20px;
+}
+
+.benefitsTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--medium-gray);
+}
+
+.benefitIcon {
+  color: var(--success-green);
+  font-weight: bold;
+  font-size: 0.75rem;
+  width: 16px;
+  height: 16px;
+  background: rgba(16, 185, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Architecture Overview */
+.architectureOverview {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out 0.6s;
+}
+
+.architectureOverview.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overviewTitle {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  text-align: center;
+  margin: 0 0 48px 0;
+  line-height: 1.3;
+}
+
+.overviewGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.overviewCard {
+  background: white;
+  padding: 32px 24px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(37, 99, 235, 0.08);
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  transition: all 0.3s ease;
+}
+
+.overviewCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.15);
+}
+
+.overviewIcon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.overviewCardTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin: 0 0 12px 0;
+  line-height: 1.3;
+}
+
+.overviewCardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--medium-gray);
+  margin: 0;
+}
+
+/* Technical Specifications */
+.specifications {
+  background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 48px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease-out 0.8s;
+}
+
+.specifications.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.specificationsTitle {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  text-align: center;
+  margin: 0 0 40px 0;
+  line-height: 1.3;
+}
+
+.specificationsTabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+
+.specTab {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+}
+
+.specTabTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.specList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.specList li {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--medium-gray);
+  padding-left: 20px;
+  position: relative;
+}
+
+.specList li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .techSection {
+    padding: 64px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .content {
+    gap: 48px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+  }
+
+  .tabNavigation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tabButton {
+    min-width: 100%;
+    max-width: 400px;
+  }
+
+  .techGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .techCard {
+    padding: 24px;
+  }
+
+  .techHeader {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .techIcon {
+    align-self: center;
+  }
+
+  .overviewTitle {
+    font-size: 1.5rem;
+  }
+
+  .overviewGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .specifications {
+    padding: 32px 24px;
+  }
+
+  .specificationsTitle {
+    font-size: 1.5rem;
+  }
+
+  .specificationsTabs {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .techSection {
+    padding: 48px 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .tabButton {
+    padding: 20px 24px;
+  }
+
+  .tabLabel {
+    font-size: 1rem;
+  }
+
+  .tabDescription {
+    font-size: 0.8rem;
+  }
+
+  .techCard {
+    padding: 20px;
+  }
+
+  .techName {
+    font-size: 1.25rem;
+  }
+
+  .overviewCard {
+    padding: 24px 20px;
+  }
+
+  .overviewCardTitle {
+    font-size: 1.125rem;
+  }
+
+  .specifications {
+    padding: 24px 20px;
+  }
+
+  .specificationsTitle {
+    font-size: 1.25rem;
+  }
+
+  .specTab {
+    padding: 20px;
+  }
+}

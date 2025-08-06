@@ -1,0 +1,78 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DBEAFE;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#BFDBFE;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FAFC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E2E8F0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bgGradient)" rx="20"/>
+  
+  <!-- Computer/Tablet Screen -->
+  <rect x="50" y="40" width="300" height="200" fill="url(#screenGradient)" rx="12" stroke="#2563EB" stroke-width="2"/>
+  
+  <!-- Screen Content - Medical Dashboard -->
+  <rect x="70" y="60" width="260" height="30" fill="#2563EB" rx="4"/>
+  <text x="85" y="80" fill="white" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Colmed Dashboard</text>
+  
+  <!-- Patient Cards -->
+  <rect x="80" y="100" width="110" height="60" fill="white" rx="6" stroke="#E5E7EB"/>
+  <circle cx="100" cy="120" r="8" fill="#10B981"/>
+  <rect x="115" y="115" width="60" height="4" fill="#6B7280" rx="2"/>
+  <rect x="115" y="125" width="40" height="3" fill="#9CA3AF" rx="1"/>
+  <rect x="85" y="140" width="90" height="3" fill="#D1D5DB" rx="1"/>
+  <rect x="85" y="148" width="70" height="3" fill="#D1D5DB" rx="1"/>
+  
+  <rect x="210" y="100" width="110" height="60" fill="white" rx="6" stroke="#E5E7EB"/>
+  <circle cx="230" cy="120" r="8" fill="#F59E0B"/>
+  <rect x="245" y="115" width="60" height="4" fill="#6B7280" rx="2"/>
+  <rect x="245" y="125" width="40" height="3" fill="#9CA3AF" rx="1"/>
+  <rect x="215" y="140" width="90" height="3" fill="#D1D5DB" rx="1"/>
+  <rect x="215" y="148" width="70" height="3" fill="#D1D5DB" rx="1"/>
+  
+  <!-- Calendar/Schedule -->
+  <rect x="80" y="175" width="240" height="50" fill="white" rx="6" stroke="#E5E7EB"/>
+  <rect x="90" y="185" width="20" height="15" fill="#2563EB" rx="2"/>
+  <rect x="120" y="185" width="20" height="15" fill="#10B981" rx="2"/>
+  <rect x="150" y="185" width="20" height="15" fill="#F59E0B" rx="2"/>
+  <rect x="180" y="185" width="20" height="15" fill="#EF4444" rx="2"/>
+  
+  <rect x="90" y="205" width="60" height="3" fill="#6B7280" rx="1"/>
+  <rect x="160" y="205" width="80" height="3" fill="#6B7280" rx="1"/>
+  <rect x="250" y="205" width="50" height="3" fill="#6B7280" rx="1"/>
+  
+  <!-- Medical Icons -->
+  <!-- Stethoscope -->
+  <g transform="translate(320, 50)">
+    <circle cx="15" cy="15" r="12" fill="none" stroke="#2563EB" stroke-width="2"/>
+    <path d="M15 3 Q15 8 20 13 Q25 18 25 25 Q25 32 18 32 Q11 32 11 25 Q11 18 16 13 Q21 8 21 3" 
+          fill="none" stroke="#2563EB" stroke-width="2"/>
+    <circle cx="18" cy="25" r="3" fill="#2563EB"/>
+  </g>
+  
+  <!-- Heart Monitor -->
+  <g transform="translate(320, 100)">
+    <rect x="5" y="10" width="30" height="20" fill="none" stroke="#10B981" stroke-width="2" rx="3"/>
+    <path d="M8 20 L12 15 L16 25 L20 10 L24 20 L28 15 L32 20" 
+          fill="none" stroke="#10B981" stroke-width="2"/>
+  </g>
+  
+  <!-- Medical Cross -->
+  <g transform="translate(320, 150)">
+    <circle cx="15" cy="15" r="12" fill="#EF4444"/>
+    <rect x="12" y="8" width="6" height="14" fill="white"/>
+    <rect x="8" y="12" width="14" height="6" fill="white"/>
+  </g>
+  
+  <!-- Floating Elements for Animation -->
+  <circle cx="60" cy="80" r="3" fill="#2563EB" opacity="0.6"/>
+  <circle cx="340" cy="200" r="4" fill="#10B981" opacity="0.4"/>
+  <circle cx="30" cy="180" r="2" fill="#F59E0B" opacity="0.7"/>
+  <circle cx="370" cy="120" r="3" fill="#EF4444" opacity="0.5"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect width="800" height="60" fill="#2563EB"/>
+  <text x="20" y="35" fill="white" font-family="Inter, sans-serif" font-size="18" font-weight="600">Colmed - Programări Medicale</text>
+  
+  <!-- Calendar Grid -->
+  <rect x="20" y="80" width="760" height="40" fill="#DBEAFE" rx="4"/>
+  <text x="30" y="105" fill="#1F2937" font-family="Inter, sans-serif" font-size="16" font-weight="500">Calendar Programări - Ianuarie 2025</text>
+  
+  <!-- Calendar Days -->
+  <g>
+    <rect x="20" y="140" width="108" height="80" fill="white" stroke="#E5E7EB" rx="4"/>
+    <text x="30" y="160" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Luni, 6 Ian</text>
+    <rect x="30" y="170" width="88" height="20" fill="#10B981" rx="2"/>
+    <text x="35" y="183" fill="white" font-family="Inter, sans-serif" font-size="10">Dr. Popescu - 09:00</text>
+    <rect x="30" y="195" width="88" height="20" fill="#F59E0B" rx="2"/>
+    <text x="35" y="208" fill="white" font-family="Inter, sans-serif" font-size="10">Dr. Ionescu - 14:30</text>
+  </g>
+  
+  <g>
+    <rect x="140" y="140" width="108" height="80" fill="white" stroke="#E5E7EB" rx="4"/>
+    <text x="150" y="160" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Marți, 7 Ian</text>
+    <rect x="150" y="170" width="88" height="20" fill="#2563EB" rx="2"/>
+    <text x="155" y="183" fill="white" font-family="Inter, sans-serif" font-size="10">Dr. Marinescu - 10:00</text>
+  </g>
+  
+  <!-- Appointment Details Panel -->
+  <rect x="20" y="240" width="760" height="340" fill="white" stroke="#E5E7EB" rx="8"/>
+  <text x="30" y="270" fill="#1F2937" font-family="Inter, sans-serif" font-size="18" font-weight="600">Detalii Programare</text>
+  
+  <!-- Patient Info -->
+  <text x="30" y="300" fill="#6B7280" font-family="Inter, sans-serif" font-size="14">Pacient: Maria Popescu</text>
+  <text x="30" y="320" fill="#6B7280" font-family="Inter, sans-serif" font-size="14">Doctor: Dr. Ana Ionescu - Cardiologie</text>
+  <text x="30" y="340" fill="#6B7280" font-family="Inter, sans-serif" font-size="14">Data: 7 Ianuarie 2025, 14:30</text>
+  <text x="30" y="360" fill="#6B7280" font-family="Inter, sans-serif" font-size="14">Status: Confirmată</text>
+  
+  <!-- Action Buttons -->
+  <rect x="30" y="380" width="100" height="35" fill="#10B981" rx="4"/>
+  <text x="65" y="402" fill="white" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">Confirmare</text>
+  
+  <rect x="140" y="380" width="100" height="35" fill="#F59E0B" rx="4"/>
+  <text x="190" y="402" fill="white" font-family="Inter, sans-serif" font-size="14" text-anchor="middle">Reprogramare</text>
+  
+  <!-- Colmed Branding -->
+  <text x="700" y="590" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Colmed 2025</text>
+</svg>

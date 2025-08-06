@@ -1,0 +1,160 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  
+  <!-- Header -->
+  <rect width="800" height="60" fill="#2563EB"/>
+  <text x="20" y="35" fill="white" font-family="Inter, sans-serif" font-size="18" font-weight="600">Colmed - Aplicația Pacient (Preview)</text>
+  
+  <!-- Mobile App Mockups -->
+  <rect x="20" y="80" width="760" height="40" fill="#DBEAFE" rx="4"/>
+  <text x="30" y="105" fill="#1F2937" font-family="Inter, sans-serif" font-size="16" font-weight="500">Interfața Mobilă pentru Pacienți</text>
+  
+  <!-- Phone 1 - Home Screen -->
+  <g>
+    <rect x="100" y="140" width="180" height="320" fill="#1F2937" rx="20"/>
+    <rect x="110" y="150" width="160" height="300" fill="white" rx="15"/>
+    
+    <!-- Phone Header -->
+    <rect x="110" y="150" width="160" height="40" fill="#2563EB" rx="15 15 0 0"/>
+    <text x="190" y="175" fill="white" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Colmed</text>
+    
+    <!-- Welcome Message -->
+    <text x="120" y="210" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Bună ziua, Maria!</text>
+    <text x="120" y="225" fill="#6B7280" font-family="Inter, sans-serif" font-size="10">Următoarea programare:</text>
+    
+    <!-- Next Appointment Card -->
+    <rect x="120" y="235" width="140" height="50" fill="#F0F9FF" stroke="#BFDBFE" rx="6"/>
+    <text x="125" y="250" fill="#2563EB" font-family="Inter, sans-serif" font-size="11" font-weight="500">Dr. Ana Ionescu</text>
+    <text x="125" y="263" fill="#6B7280" font-family="Inter, sans-serif" font-size="9">8 Ian 2025, 14:30</text>
+    <text x="125" y="276" fill="#6B7280" font-family="Inter, sans-serif" font-size="9">Cardiologie</text>
+    
+    <!-- Action Buttons -->
+    <rect x="120" y="300" width="140" height="30" fill="#10B981" rx="4"/>
+    <text x="190" y="320" fill="white" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">Programare Nouă</text>
+    
+    <rect x="120" y="340" width="140" height="30" fill="#F59E0B" rx="4"/>
+    <text x="190" y="360" fill="white" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">Rezultate Analize</text>
+    
+    <rect x="120" y="380" width="140" height="30" fill="#8B5CF6" rx="4"/>
+    <text x="190" y="400" fill="white" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">Chat cu Doctorul</text>
+  </g>
+  
+  <!-- Phone 2 - Appointment Booking -->
+  <g>
+    <rect x="320" y="140" width="180" height="320" fill="#1F2937" rx="20"/>
+    <rect x="330" y="150" width="160" height="300" fill="white" rx="15"/>
+    
+    <!-- Phone Header -->
+    <rect x="330" y="150" width="160" height="40" fill="#2563EB" rx="15 15 0 0"/>
+    <text x="410" y="175" fill="white" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Programare</text>
+    
+    <!-- Specialty Selection -->
+    <text x="340" y="210" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Selectează specialitatea:</text>
+    
+    <rect x="340" y="220" width="140" height="25" fill="#F8FAFC" stroke="#E5E7EB" rx="4"/>
+    <text x="345" y="237" fill="#374151" font-family="Inter, sans-serif" font-size="10">Cardiologie</text>
+    
+    <rect x="340" y="250" width="140" height="25" fill="#F8FAFC" stroke="#E5E7EB" rx="4"/>
+    <text x="345" y="267" fill="#374151" font-family="Inter, sans-serif" font-size="10">Neurologie</text>
+    
+    <rect x="340" y="280" width="140" height="25" fill="#DBEAFE" stroke="#2563EB" rx="4"/>
+    <text x="345" y="297" fill="#2563EB" font-family="Inter, sans-serif" font-size="10">Pediatrie ✓</text>
+    
+    <!-- Available Slots -->
+    <text x="340" y="325" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Ore disponibile:</text>
+    
+    <rect x="340" y="335" width="60" height="25" fill="#10B981" rx="4"/>
+    <text x="370" y="352" fill="white" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">09:00</text>
+    
+    <rect x="410" y="335" width="60" height="25" fill="#10B981" rx="4"/>
+    <text x="440" y="352" fill="white" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">14:30</text>
+    
+    <rect x="340" y="365" width="60" height="25" fill="#6B7280" rx="4"/>
+    <text x="370" y="382" fill="white" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">16:00</text>
+    
+    <rect x="410" y="365" width="60" height="25" fill="#6B7280" rx="4"/>
+    <text x="440" y="382" fill="white" font-family="Inter, sans-serif" font-size="9" text-anchor="middle">17:30</text>
+    
+    <!-- Confirm Button -->
+    <rect x="340" y="410" width="140" height="30" fill="#2563EB" rx="4"/>
+    <text x="410" y="430" fill="white" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">Confirmă Programarea</text>
+  </g>
+  
+  <!-- Phone 3 - Medical Results -->
+  <g>
+    <rect x="540" y="140" width="180" height="320" fill="#1F2937" rx="20"/>
+    <rect x="550" y="150" width="160" height="300" fill="white" rx="15"/>
+    
+    <!-- Phone Header -->
+    <rect x="550" y="150" width="160" height="40" fill="#2563EB" rx="15 15 0 0"/>
+    <text x="630" y="175" fill="white" font-family="Inter, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Rezultate</text>
+    
+    <!-- Results List -->
+    <text x="560" y="210" fill="#1F2937" font-family="Inter, sans-serif" font-size="12" font-weight="500">Analize recente:</text>
+    
+    <!-- Result Item 1 -->
+    <rect x="560" y="220" width="140" height="40" fill="#F0FDF4" stroke="#BBF7D0" rx="4"/>
+    <text x="565" y="235" fill="#10B981" font-family="Inter, sans-serif" font-size="10" font-weight="500">Analize sânge</text>
+    <text x="565" y="248" fill="#6B7280" font-family="Inter, sans-serif" font-size="9">5 Ian 2025</text>
+    <text x="565" y="255" fill="#10B981" font-family="Inter, sans-serif" font-size="8">Rezultate normale</text>
+    
+    <!-- Result Item 2 -->
+    <rect x="560" y="270" width="140" height="40" fill="#FFFBEB" stroke="#FED7AA" rx="4"/>
+    <text x="565" y="285" fill="#F59E0B" font-family="Inter, sans-serif" font-size="10" font-weight="500">EKG</text>
+    <text x="565" y="298" fill="#6B7280" font-family="Inter, sans-serif" font-size="9">3 Ian 2025</text>
+    <text x="565" y="305" fill="#F59E0B" font-family="Inter, sans-serif" font-size="8">În așteptare</text>
+    
+    <!-- Result Item 3 -->
+    <rect x="560" y="320" width="140" height="40" fill="#F0F9FF" stroke="#BFDBFE" rx="4"/>
+    <text x="565" y="335" fill="#2563EB" font-family="Inter, sans-serif" font-size="10" font-weight="500">Radiografie</text>
+    <text x="565" y="348" fill="#6B7280" font-family="Inter, sans-serif" font-size="9">28 Dec 2024</text>
+    <text x="565" y="355" fill="#2563EB" font-family="Inter, sans-serif" font-size="8">Disponibil</text>
+    
+    <!-- Download Button -->
+    <rect x="560" y="380" width="140" height="30" fill="#8B5CF6" rx="4"/>
+    <text x="630" y="400" fill="white" font-family="Inter, sans-serif" font-size="11" text-anchor="middle">Descarcă PDF</text>
+  </g>
+  
+  <!-- Features Panel -->
+  <rect x="20" y="480" width="760" height="100" fill="white" stroke="#E5E7EB" rx="8"/>
+  <text x="30" y="505" fill="#1F2937" font-family="Inter, sans-serif" font-size="18" font-weight="600">Funcționalități Aplicație Pacient</text>
+  
+  <!-- Feature List -->
+  <g>
+    <circle cx="40" cy="525" r="3" fill="#10B981"/>
+    <text x="55" y="530" fill="#374151" font-family="Inter, sans-serif" font-size="12">Programări online simple și rapide</text>
+  </g>
+  
+  <g>
+    <circle cx="40" cy="545" r="3" fill="#10B981"/>
+    <text x="55" y="550" fill="#374151" font-family="Inter, sans-serif" font-size="12">Acces instant la rezultate și istoric medical</text>
+  </g>
+  
+  <g>
+    <circle cx="300" cy="525" r="3" fill="#10B981"/>
+    <text x="315" y="530" fill="#374151" font-family="Inter, sans-serif" font-size="12">Notificări push pentru programări și rezultate</text>
+  </g>
+  
+  <g>
+    <circle cx="300" cy="545" r="3" fill="#10B981"/>
+    <text x="315" y="550" fill="#374151" font-family="Inter, sans-serif" font-size="12">Chat direct cu echipa medicală</text>
+  </g>
+  
+  <g>
+    <circle cx="580" cy="525" r="3" fill="#10B981"/>
+    <text x="595" y="530" fill="#374151" font-family="Inter, sans-serif" font-size="12">Interfață intuitivă și user-friendly</text>
+  </g>
+  
+  <g>
+    <circle cx="580" cy="545" r="3" fill="#10B981"/>
+    <text x="595" y="550" fill="#374151" font-family="Inter, sans-serif" font-size="12">Securitate și confidențialitate garantată</text>
+  </g>
+  
+  <!-- Coming Soon Badge -->
+  <rect x="650" y="85" width="120" height="30" fill="#8B5CF6" rx="15"/>
+  <text x="710" y="105" fill="white" font-family="Inter, sans-serif" font-size="12" font-weight="600" text-anchor="middle">În Dezvoltare</text>
+  
+  <!-- Colmed Branding -->
+  <text x="700" y="590" fill="#6B7280" font-family="Inter, sans-serif" font-size="12">Colmed 2025</text>
+</svg>
