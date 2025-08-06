@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { Logo } from '../../ui/Logo';
-import { Icon } from '../../ui/Icon';
+import React, { useEffect, useState } from 'react';
 import { Button } from '../../ui/Button';
+import { Icon } from '../../ui/Icon';
+import { Logo } from '../../ui/Logo';
 import styles from './Header.module.css';
 
 export interface HeaderProps {
@@ -14,13 +14,13 @@ const navigationItems = [
   { id: 'demo', label: 'Demonstrații' },
   { id: 'arhitectura', label: 'Arhitectura' },
   { id: 'avantaje', label: 'Avantaje' },
-  { id: 'contact', label: 'Contact' }
+  { id: 'contact', label: 'Contact' },
 ];
 
 export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isTouchDevice, setIsTouchDevice] = useState(false);
+  // const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,20 +28,25 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
     };
 
     // Detect touch device
-    const detectTouchDevice = () => {
-      setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
-    };
+    // const detectTouchDevice = () => {
+    //   setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    // };
 
     window.addEventListener('scroll', handleScroll);
-    detectTouchDevice();
-    
+    // detectTouchDevice();
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   // Close mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (isMobileMenuOpen && !(event.target as Element).closest(`.${styles.mobileOverlay}, .${styles.mobileMenuButton}`)) {
+      if (
+        isMobileMenuOpen &&
+        !(event.target as Element).closest(
+          `.${styles.mobileOverlay}, .${styles.mobileMenuButton}`
+        )
+      ) {
         setIsMobileMenuOpen(false);
       }
     };
@@ -90,17 +95,16 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   };
 
   // Handle touch events for better mobile interaction
-  const handleTouchStart = (event: React.TouchEvent) => {
+  const handleTouchStart = () => {
     // Add haptic feedback on supported devices
     if ('vibrate' in navigator) {
       navigator.vibrate(10);
     }
   };
 
-  const headerClasses = [
-    styles.header,
-    isScrolled && styles.scrolled
-  ].filter(Boolean).join(' ');
+  const headerClasses = [styles.header, isScrolled && styles.scrolled]
+    .filter(Boolean)
+    .join(' ');
 
   return (
     <header className={headerClasses}>
@@ -159,18 +163,20 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
       {/* Mobile Navigation Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className={styles.mobileOverlay}
           role="dialog"
           aria-modal="true"
           aria-labelledby="mobile-menu-title"
         >
-          <nav 
+          <nav
             id="mobile-navigation"
-            className={styles.mobileNav} 
+            className={styles.mobileNav}
             aria-label="Navigație mobilă"
           >
-            <h2 id="mobile-menu-title" className="sr-only">Meniu de navigație</h2>
+            <h2 id="mobile-menu-title" className="sr-only">
+              Meniu de navigație
+            </h2>
             <ul className={styles.mobileNavList}>
               {navigationItems.map((item, index) => (
                 <li key={item.id}>
@@ -178,9 +184,9 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
                     className={styles.mobileNavLink}
                     onClick={() => handleNavClick(item.id)}
                     onTouchStart={handleTouchStart}
-                    style={{ 
+                    style={{
                       animationDelay: `${index * 0.05}s`,
-                      animation: 'fadeIn 0.3s ease-out forwards'
+                      animation: 'fadeIn 0.3s ease-out forwards',
                     }}
                   >
                     {item.label}
